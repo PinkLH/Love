@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['draw_music_pack_test.py'],
-             pathex=['E:\\Git\\Pink_Love_Blue\\src'],
+             pathex=['E:\\Git\\Love\\src'],
              binaries=[],
              datas=[('datas','datas')],
              hiddenimports=[],

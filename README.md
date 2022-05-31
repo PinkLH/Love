@@ -38,7 +38,7 @@ pip install pipenv
 **&emsp;原理：**
 利用 **`turtle`**,**`time`** 库作出动画图案主体
 
-&emsp;作图测试([**_draw_test.py_**](https://github.com/PinkLH/Pink_Love_Blue/blob/main/src/draw_test.py))：
+&emsp;作图测试([**_draw_test.py_**](https://github.com/PinkLH/Love/blob/main/src/draw_test.py))：
 ```python
 import turtle
 import time
@@ -238,7 +238,7 @@ if __name__ == '__main__':
 **&emsp;原理：**
 创建一个线程用于 **`pygame`** 播放音乐，以达到利用 **`turtle`** 作图的同时播放音乐的目的
 
-&emsp;音乐测试([**_music_test.py_**](https://github.com/PinkLH/Pink_Love_Blue/blob/main/src/music_test.py))：
+&emsp;音乐测试([**_music_test.py_**](https://github.com/PinkLH/Love/blob/main/src/music_test.py))：
 ```python
 import pygame
 import time
@@ -260,7 +260,7 @@ if __name__ == '__main__':
 ```
 
 ## 四、合并功能
-&emsp;将以上功能合并得到源码 [**_draw_music_test.py_**](https://github.com/PinkLH/Pink_Love_Blue/blob/main/src/draw_music_test.py)
+&emsp;将以上功能合并得到源码 [**_draw_music_test.py_**](https://github.com/PinkLH/Love/blob/main/src/draw_music_test.py)
 
 
 ## 五、源码打包
@@ -329,7 +329,7 @@ def resource_path(relative_path):
 filepath = resource_path("datas\music\晴天.mp3")    # 音乐文件路径
 ```
 
-&emsp;&emsp;得到源码([**_draw_music_pack_test.py_**](https://github.com/PinkLH/Pink_Love_Blue/blob/main/src/draw_music_pack_test.py))。然后在打包的时候加上几个步骤。按照以上的步骤第一次打包后，删除打包时产生的其它的文件，只保留 _.spec_ 文件，然后打开 _.spec_ 文件，将其中的 "**datas**" 属性修改为要打包的资源文件的路径。将 "**icon**" 属性修改为exe文件图标的路径。_.spec_ 文件如下([**_draw_music_pack_test.spec_**](https://github.com/PinkLH/Pink_Love_Blue/blob/main/src/draw_music_pack_test.spec)):
+&emsp;&emsp;得到源码([**_draw_music_pack_test.py_**](https://github.com/PinkLH/Love/blob/main/src/draw_music_pack_test.py))。然后在打包的时候加上几个步骤。按照以上的步骤第一次打包后，删除打包时产生的其它的文件，只保留 _.spec_ 文件，然后打开 _.spec_ 文件，将其中的 "**datas**" 属性修改为要打包的资源文件的路径。将 "**icon**" 属性修改为exe文件图标的路径。_.spec_ 文件如下([**_draw_music_pack_test.spec_**](https://github.com/PinkLH/Love/blob/main/src/draw_music_pack_test.spec)):
 ```python
 # -*- mode: python ; coding: utf-8 -*-
 
@@ -338,7 +338,7 @@ block_cipher = None
 
 
 a = Analysis(['draw_music_pack_test.py'],                   # 源码文件名称
-             pathex=['E:\\Git\\Pink_Love_Blue\\src'],       # 源码文件路径
+             pathex=['E:\\Git\\Love\\src'],       # 源码文件路径
              binaries=[],
              datas=[('datas','datas')],                     # 资源文件的路径(两个都要填，两个都填一样的路径)
              hiddenimports=[],
@@ -388,7 +388,7 @@ pyinstaller draw_music_pack_test.spec
 
 
 ## 七、最终功能
-&emsp;**源码([_Love.py_](https://github.com/PinkLH/Pink_Love_Blue/blob/main/src/Love.py)):**
+&emsp;**源码([_Love.py_](https://github.com/PinkLH/Love/blob/main/src/Love.py)):**
 ```python
 
 ```
