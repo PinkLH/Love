@@ -148,7 +148,7 @@ def page0():
     turtle.penup()
     turtle.goto(-350, 0)
     turtle.color(0, 255, 255)
-    turtle.write('给我最爱的xxx宝贝(❤ ω ❤)', font=('华文行楷', 40, 'normal'))
+    turtle.write('给我最爱的豆豆宝贝(❤ ω ❤)', font=('STCaiyun', 40, 'normal'))
     time.sleep(3)
 
 def page1():
@@ -172,7 +172,7 @@ def page2():
     turtle.goto(-200, -200)
     turtle.color(0, 255, 255)
     turtle.pendown()
-    turtle.write('xxx            xxx', font=('wisdom', 33, 'normal'))
+    turtle.write('黎 宏                 杜运熙', font=('STCaiyun', 33, 'normal'))
     turtle.penup()
     turtle.goto(0, -180)
     draw_heart(10)
@@ -182,12 +182,12 @@ def page2():
 def page3():
     turtle.penup()
     turtle.speed(10)
-    turtle.goto(-350, 0)
+    turtle.goto(-300, 0)
     turtle.color(0, 255, 255)
-    turtle.write('爱 你 哟 ❤ ❤ ❤', font=('宋体', 60, 'normal'))
+    turtle.write('爱 你 哟 ❤ ❤ ❤', font=('STCaiyun', 60, 'normal'))
 
 def main():
-    turtle.title("送给xxx宝贝")
+    turtle.title("送给豆豆宝贝")
     turtle.setup(900, 500)
     turtle.hideturtle()
     turtle.colormode(255)
